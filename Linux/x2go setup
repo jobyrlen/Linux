@@ -1,0 +1,12 @@
+x2go setup on debian 8 jessie:
+
+apt-get update
+apt-get install python-software-properties -y
+add-apt-repository ppa:x2go/stable
+apt-get update
+apt-get install x2goserver x2goserver-xsession -y
+apt-add-repository ppa:ubuntu-mate-dev/ppa
+apt-add-repository ppa:ubuntu-mate-dev/trusty-mate
+apt-get update
+apt-get upgrade -y
+apt-get install --no-install-recommends ubuntu-mate-core ubuntu-mate-desktop -y
